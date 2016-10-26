@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+	
+	<div class="bar bar-header bar-balanced">
+		
+		<button class="button button-large button-clear">Phone</button>
+		<button class="button button-clear">More</button>
+		
+	</div>
+
+<!-- <div class="button-bar">
+	<button class="button button-clear button-small">LOG</button>
+	<button class="button button-clear button-small">FAVORITES</button>
+	<button class="button button-clear button-small">CONTACTS</button>
+ </div>-->
+<div class="tabs-striped tabs-top tabs-background-balanced tabs-color-light">
+    <div class="tabs">
+      <button class="tab-item active " >
+       
+        LOGS
+      </button>
+      <a class="tab-item" href="#">
+       
+        FAVORITES
+      </a>
+      <a class="tab-item" href="#">
+      
+        CONTACTS
+      </a>
+    </div>
+  </div>
+
+<content style="padding-top: 88px;clear: both;display: block;">
+<div class="list">
+		<div class="item item-divider">Today</div>
+		<a class="item item-avatar" href="#">
+		
+			<img src="img/venkman.jpg" />
+			 <span class="item-note"> 09:23  </span>
+			<h2>Ama</h2>
+			<p><i class="icon ion-arrow-down-c balanced"></i> 2 Mobile
+			</p>
+			
+		</a>
+		<div class="item item-divider">Yesterday</div>
+		<a class="item item-avatar" href="#">
+		
+			<img src="img/2.jpg" />
+			 <span class="item-note"> 20:33  </span>
+			<h2>014365184</h2>
+			<p><i class="icon ion-arrow-down-c assertive"></i> 2 Unsaved
+			</p>
+			
+		</a>
+		<a class="item item-avatar" href="#">
+		
+			<img src="img/3.jpg" />
+			 <span class="item-note"> 15:45  </span>
+			<h2>John</h2>
+			<p><i class="icon ion-ios-close-outline "></i> 1 Mobile
+			</p>
+			
+		</a>
+		<a class="item item-avatar" href="#">
+		
+			<img src="img/4.jpg" />
+			 <span class="item-note"> 15:20  </span>
+			<h2>Raj Maharjan</h2>
+			<p><i class="icon ion-arrow-up-c balanced "></i> 2 Mobile
+			</p>
+			
+		</a>
+		<div class="item item-divider">October 24, 2016</div>
+			<a class="item item-avatar" href="#">
+		
+			<img src="img/5.jpg" />
+			 <span class="item-note"> 20:33  </span>
+			<h2>Ipay (2)</h2>
+			<p><i class="icon ion-arrow-up-c assertive"></i> 2 Mobile
+			</p>
+			
+		</a>
+		<a class="item item-avatar" href="#">
+		
+			<img src="img/6.jpg" />
+			 <span class="item-note"> 20:33  </span>
+			<h2>Ipay (2)</h2>
+			<p><i class="icon ion-arrow-up-c assertive"></i> 1 Home
+			</p>
+			
+		</a>
+		<a class="item item-avatar" href="#">
+		
+			<img src="img/2.jpg" />
+			 <span class="item-note"> 20:33  </span>
+			<h2>014365184</h2>
+			<p><i class="icon ion-arrow-down-c assertive"></i> 2 Unsaved
+			</p>
+			
+		</a>
+		<a class="item item-avatar" href="#">
+		
+			<img src="img/3.jpg" />
+			 <span class="item-note"> 15:45  </span>
+			<h2>John</h2>
+			<p><i class="icon ion-ios-close-outline "></i> 1 Mobile
+			</p>
+			
+		</a>
+		<a class="item item-avatar" href="#">
+		
+			<img src="img/4.jpg" />
+			 <span class="item-note"> 15:20  </span>
+			<h2>Raj Maharjan</h2>
+			<p><i class="icon ion-arrow-up-c balanced "></i> 2 Mobile
+			</p>
+			
+		</a>
+</div>
+</content>
+ </body>
+</html>
